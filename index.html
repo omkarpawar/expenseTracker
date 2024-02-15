@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <form id ="Pform" onsubmit="display(event)">
+     
+        <label for="expenseAmount">Choose Expense Amount</label>
+        <input type="text" id="expenseAmount" name="expenseAmount">
+
+        <label for="Description">Choose Description</label>
+        <input type="text" id="Description" name="Description">
+
+        <label for="Category">Choose Category</label>
+        <select id="Category" name="Category">
+            <option value="fuel">Fuel</option>
+            <option value="food">Food</option>
+            <option value="electricity">Electricity</option>
+            <option value="movie">Movie</option>
+        </select>
+
+        <button type="submit">submit</button>
+    </form>
+
+    <ul id="todoList"></ul>
+    
+</body>
+</html>
